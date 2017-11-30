@@ -117,6 +117,7 @@ TEST(get_car_fails)
 */
 TEST(init) {
 	init();
+
 	ASSERT_TRUE(get_car(AIXAM) != 0, "One Axiam available");
 	ASSERT_TRUE(get_car(AIXAM) == 0, "Only one Axiam available");
 	ASSERT_TRUE(get_car(FIAT_MULTIPLA) != 0, "First Multi available");
@@ -126,6 +127,8 @@ TEST(init) {
 	ASSERT_TRUE(get_car(JEEP) != 0, "First Jeep available");
 	ASSERT_TRUE(get_car(JEEP) != 0, "Second Jeep available");
 	ASSERT_TRUE(get_car(JEEP) == 0, "Only two Jeeps available");
+
+
 }
 
 /**
